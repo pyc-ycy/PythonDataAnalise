@@ -7,5 +7,14 @@
 # @software: PyCharm
 
 
+def test(a: int, b: int) -> int:
+    return a + b
+
+
 if __name__ == "__main__":
-    print("Hello world")
+    a = int(10)
+    b = int(15)
+    d = "a"
+    e = "4"
+    c = test(a, b)
+    print(c)
