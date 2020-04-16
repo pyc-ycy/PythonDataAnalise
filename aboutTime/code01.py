@@ -14,4 +14,7 @@ if __name__ == "__main__":
     print(time.time())
     print(time.gmtime())
     t = time.gmtime()
-    print(time.strftime("%Y-%m-%d %H:%M:%S", t))
+    print(time.strftime("%Y-%m-%d,%B %A %H:%M:%S", t))
+    tmpStr = time.strftime("%Y-%m-%d %H:%M:%S", t)
+    tmpStr2 = time.strptime(tmpStr, "%Y-%m-%d %H:%M:%S")
+    print(tmpStr2)
