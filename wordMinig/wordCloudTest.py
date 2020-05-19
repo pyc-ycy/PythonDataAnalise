@@ -33,6 +33,7 @@ def GetWordCloud():
     # 下面代码表示显示图片
     plt.imshow(wordcloud.recolor(color_func=image_colors), interpolation="bilinear")
     plt.axis("off")
+    plt.savefig("wordCloud.png")
     plt.show()
 
 

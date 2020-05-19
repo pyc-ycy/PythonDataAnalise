@@ -6,16 +6,13 @@
 # File: test01
 # PyCharm
 
-def leiChen(num):
-    result = 1
-    for i in range(1, num + 1):
-        result = result * i
-    return result
+def aFunc(a: int, b: int) -> str:
+    c = a + b
+    return "a+b=" + str(c)
 
 
 if __name__ == "__main__":
-    n = int(input())
-    sumNum = 0
-    for i in range(1,n+1):
-        sumNum = sumNum + leiChen(i)
-    print(sumNum)
+    a = 23
+    b = 32
+    c = aFunc(a, b)
+    print(c)
